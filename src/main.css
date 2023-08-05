@@ -1,0 +1,111 @@
+* , *::after ,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+    body{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    nav{
+    
+      width: 100%;
+    }
+    .navBar{
+      position: relative;
+    }
+    .navBar .o{
+      position: absolute;
+      z-index: 99;
+      right: 3%;
+      top: 102%;
+    }
+    ul{
+    font-size: 1.4rem;
+    padding: 0.9em 2em; 
+    background-color: rgb(222, 222, 222);  
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    }
+    ul li {
+      list-style: none;
+    }
+    ul li a , a{
+      text-decoration: none;
+      color: rgb(28, 27, 27)
+    }
+    li + li{
+    margin-left: auto;
+    }
+    .shop{
+      font-size: 2rem;
+      background-color: rgba(202, 94, 94, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 1rem;
+     flex-wrap: wrap;
+     min-height: 10rem;
+    
+    }
+    .shop > *{
+      text-align: center;
+     
+    }
+    .Product{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.3em;
+    }
+    .Product p >span{
+      font-size: 1.4rem;
+    }
+    .Product button{
+      border: none;
+      font-weight: 100;
+      background-color: rgb(189, 182, 218);
+      padding: 0.9em 1em;
+      font-size: 1rem;
+      border-radius: 10px;
+    }
+    .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.3em;
+    font-size: 1rem;
+    }
+    .addcart,.minus,.plus{
+      cursor: pointer;
+    }
+    .searchAndLi{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .cart .close {
+      position: absolute;
+      right: 5%;top: 3%;
+      cursor: pointer;
+    }
+
+    .searchAndLi b,.clear { 
+      cursor: pointer;
+    }
+    
+
+    .cart{
+      background-color: rgb(129, 176, 176);
+      width: 30em;
+      min-height: 25em;
+      position: relative;
+    }
+    
+    .cartProduct{
+      display: flex;
+      align-items: center;
+      gap:0.5em;
+    }
